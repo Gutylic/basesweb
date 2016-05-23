@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [baseWebSupervisor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Database [baseWebSupervisor]    Script Date: 23/05/2016 14:59:46 ******/
 CREATE DATABASE [baseWebSupervisor]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,14 +77,14 @@ EXEC sys.sp_db_vardecimal_storage_format N'baseWebSupervisor', N'ON'
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  FullTextCatalog [Busquedas]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextCatalog [Busquedas]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT CATALOG [Busquedas]WITH ACCENT_SENSITIVITY = OFF
 AS DEFAULT
 
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Ano]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Ano]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Ano] 
  AS [int]
  START WITH 1
@@ -96,7 +96,7 @@ CREATE SEQUENCE [dbo].[secuancia_Ano]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Colegio]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Colegio]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Colegio] 
  AS [int]
  START WITH 1
@@ -108,7 +108,7 @@ CREATE SEQUENCE [dbo].[secuancia_Colegio]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Ejercicio]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Ejercicio]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Ejercicio] 
  AS [int]
  START WITH 1
@@ -120,7 +120,7 @@ CREATE SEQUENCE [dbo].[secuancia_Ejercicio]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Materia]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Materia]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Materia] 
  AS [int]
  START WITH 1
@@ -132,7 +132,7 @@ CREATE SEQUENCE [dbo].[secuancia_Materia]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_MisEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_MisEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_MisEjercicios] 
  AS [int]
  START WITH 1
@@ -144,7 +144,7 @@ CREATE SEQUENCE [dbo].[secuancia_MisEjercicios]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_MisExplicaciones]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_MisExplicaciones]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_MisExplicaciones] 
  AS [int]
  START WITH 1
@@ -156,7 +156,7 @@ CREATE SEQUENCE [dbo].[secuancia_MisExplicaciones]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_PedidoEjercicioVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_PedidoEjercicioVideo]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_PedidoEjercicioVideo] 
  AS [int]
  START WITH 1
@@ -168,7 +168,7 @@ CREATE SEQUENCE [dbo].[secuancia_PedidoEjercicioVideo]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_PreguntaUsuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_PreguntaUsuario]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_PreguntaUsuario] 
  AS [bigint]
  START WITH -9223372036854775808
@@ -179,7 +179,7 @@ CREATE SEQUENCE [dbo].[secuancia_PreguntaUsuario]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Profesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Profesor]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Profesor] 
  AS [int]
  START WITH 1
@@ -191,7 +191,7 @@ CREATE SEQUENCE [dbo].[secuancia_Profesor]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaEjercicios] 
  AS [int]
  START WITH 1
@@ -202,7 +202,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaEjercicios]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaEmpresa]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaEmpresa]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaEmpresa] 
  AS [int]
  START WITH 1
@@ -214,7 +214,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaEmpresa]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaMovimientos]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaMovimientos]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaMovimientos] 
  AS [int]
  START WITH 1
@@ -226,7 +226,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaMovimientos]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaPedidoExplicacion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaPedidoExplicacion]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaPedidoExplicacion] 
  AS [int]
  START WITH 1
@@ -238,7 +238,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaPedidoExplicacion]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaProfesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaProfesor]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaProfesor] 
  AS [int]
  START WITH 1
@@ -250,7 +250,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaProfesor]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaTema]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaTema]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaTema] 
  AS [bigint]
  START WITH 1
@@ -262,7 +262,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaTema]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TablaUsuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TablaUsuario]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TablaUsuario] 
  AS [int]
  START WITH 1
@@ -274,7 +274,7 @@ CREATE SEQUENCE [dbo].[secuancia_TablaUsuario]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_TarjetaPrepaga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_TarjetaPrepaga]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_TarjetaPrepaga] 
  AS [int]
  START WITH 1
@@ -286,7 +286,7 @@ CREATE SEQUENCE [dbo].[secuancia_TarjetaPrepaga]
 GO
 USE [baseWebSupervisor]
 GO
-/****** Object:  Sequence [dbo].[secuancia_Tema]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Sequence [dbo].[secuancia_Tema]    Script Date: 23/05/2016 14:59:47 ******/
 CREATE SEQUENCE [dbo].[secuancia_Tema] 
  AS [int]
  START WITH 1
@@ -295,7 +295,7 @@ CREATE SEQUENCE [dbo].[secuancia_Tema]
  MAXVALUE 19888888
  NO CACHE 
 GO
-/****** Object:  Table [dbo].[Tabla_Ano]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Ano]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -311,7 +311,7 @@ CREATE TABLE [dbo].[Tabla_Ano](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_BuquedasEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_BuquedasEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -331,7 +331,7 @@ CREATE TABLE [dbo].[Tabla_BuquedasEjercicios](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Colegio]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Colegio]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -347,7 +347,7 @@ CREATE TABLE [dbo].[Tabla_Colegio](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_DatosExtraUsuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_DatosExtraUsuario]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -361,7 +361,7 @@ CREATE TABLE [dbo].[Tabla_DatosExtraUsuario](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_DatosUsuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_DatosUsuario]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -375,7 +375,7 @@ CREATE TABLE [dbo].[Tabla_DatosUsuario](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_DuracionProductos]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_DuracionProductos]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -393,7 +393,7 @@ CREATE TABLE [dbo].[Tabla_DuracionProductos](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Ejercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Ejercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -410,7 +410,7 @@ CREATE TABLE [dbo].[Tabla_Ejercicios](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Empresa]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Empresa]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -425,7 +425,7 @@ CREATE TABLE [dbo].[Tabla_Empresa](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_EnunciadoEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_EnunciadoEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -441,7 +441,7 @@ CREATE TABLE [dbo].[Tabla_EnunciadoEjercicios](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Materia]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Materia]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -457,13 +457,13 @@ CREATE TABLE [dbo].[Tabla_Materia](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_MisEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_MisEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tabla_MisEjercicios](
-	[id_CompraEjercicioExplicaicones] [int] NOT NULL,
+	[id_CompraEjercicioExplicaicones] [int] NOT NULL CONSTRAINT [DF_Tabla_MisEjercicios_id_CompraEjercicioExplicaicones]  DEFAULT (NEXT VALUE FOR [secuancia_MisEjercicios]),
 	[id_Ejercicio] [int] NOT NULL,
 	[ejercicio] [bit] NOT NULL,
 	[explicacion] [bit] NOT NULL,
@@ -477,13 +477,13 @@ CREATE TABLE [dbo].[Tabla_MisEjercicios](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_MisExplicaciones]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_MisExplicaciones]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tabla_MisExplicaciones](
-	[id_CompraVideos] [int] NULL,
+	[id_CompraVideos] [int] NULL CONSTRAINT [DF_Tabla_MisExplicaciones_id_CompraVideos]  DEFAULT (NEXT VALUE FOR [secuancia_MisExplicaciones]),
 	[id_Ejercicio] [int] NULL,
 	[video] [bit] NULL,
 	[vencimiento] [int] NULL,
@@ -492,7 +492,7 @@ CREATE TABLE [dbo].[Tabla_MisExplicaciones](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Movimientos]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Movimientos]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -511,7 +511,7 @@ CREATE TABLE [dbo].[Tabla_Movimientos](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Ofertas]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Ofertas]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -541,20 +541,21 @@ CREATE TABLE [dbo].[Tabla_Ofertas](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_PedidoEjercicioVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_PedidoEjercicioVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tabla_PedidoEjercicioVideo](
-	[id_PedidoEjercicioVideo] [int] NOT NULL,
+	[id_PedidoEjercicioVideo] [int] NOT NULL CONSTRAINT [DF_Tabla_PedidoEjercicioVideo_id_PedidoEjercicioVideo]  DEFAULT (NEXT VALUE FOR [secuancia_PedidoEjercicioVideo]),
 	[id_Usuario] [int] NOT NULL,
-	[id_Administrador] [int] NOT NULL,
+	[id_Administrador] [int] NULL,
 	[fechaPedidoEjercicioVideo] [datetime] NULL,
 	[fichaEjercicioVideo] [nvarchar](50) NULL,
 	[enunciadoEjercicioVideoMATH] [nvarchar](50) NULL,
 	[adjuntoEjercicioVideo] [nvarchar](50) NULL,
 	[realizadoOKPedidoEjercicioVideo] [bit] NULL,
+	[pedidoExplicacion] [bit] NULL,
  CONSTRAINT [PK_Tabla_PedidoEjercicioVideo] PRIMARY KEY CLUSTERED 
 (
 	[id_PedidoEjercicioVideo] ASC
@@ -562,17 +563,19 @@ CREATE TABLE [dbo].[Tabla_PedidoEjercicioVideo](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_PedidoExplicacion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_PedidoExplicacion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tabla_PedidoExplicacion](
-	[id_PedidoExplicacion] [int] NOT NULL,
+	[id_PedidoExplicacion] [int] NOT NULL CONSTRAINT [DF_Tabla_PedidoExplicacion_id_PedidoExplicacion]  DEFAULT (NEXT VALUE FOR [secuancia_TablaPedidoExplicacion]),
 	[id_Usuario] [int] NOT NULL,
 	[fechaPedidoExplicacion] [datetime] NULL,
-	[id_Administrador] [int] NOT NULL,
+	[id_Administrador] [int] NULL,
 	[realizadoOK] [bit] NULL,
+	[id_Ejercicio] [int] NULL,
+	[id_Empresa] [int] NULL,
  CONSTRAINT [PK_Tabla_PedidoExplicacion] PRIMARY KEY CLUSTERED 
 (
 	[id_PedidoExplicacion] ASC
@@ -580,7 +583,7 @@ CREATE TABLE [dbo].[Tabla_PedidoExplicacion](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_PreguntaClientes]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_PreguntaClientes]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -598,7 +601,7 @@ CREATE TABLE [dbo].[Tabla_PreguntaClientes](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Profesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Profesor]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -614,7 +617,7 @@ CREATE TABLE [dbo].[Tabla_Profesor](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_TarjetaPrepaga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_TarjetaPrepaga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -633,7 +636,7 @@ CREATE TABLE [dbo].[Tabla_TarjetaPrepaga](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Tema]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Tema]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -649,7 +652,7 @@ CREATE TABLE [dbo].[Tabla_Tema](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_TipoIntitucion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_TipoIntitucion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -664,7 +667,7 @@ CREATE TABLE [dbo].[Tabla_TipoIntitucion](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_TipoMovimientos]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_TipoMovimientos]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -679,7 +682,7 @@ CREATE TABLE [dbo].[Tabla_TipoMovimientos](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_UbicacionEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_UbicacionEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -692,7 +695,7 @@ CREATE TABLE [dbo].[Tabla_UbicacionEjercicios](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_Usuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_Usuario]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -711,7 +714,7 @@ CREATE TABLE [dbo].[Tabla_Usuario](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_UsuarioCredito]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_UsuarioCredito]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -724,7 +727,7 @@ CREATE TABLE [dbo].[Tabla_UsuarioCredito](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Tabla_ValorOfertas]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  Table [dbo].[Tabla_ValorOfertas]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -754,7 +757,7 @@ CREATE TABLE [dbo].[Tabla_ValorOfertas](
 ) ON [PRIMARY]
 
 GO
-/****** Object:  View [dbo].[Vista_ActivacionUsuarioWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_ActivacionUsuarioWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -769,7 +772,7 @@ FROM            dbo.Tabla_Usuario INNER JOIN
                          dbo.Tabla_DatosUsuario ON dbo.Tabla_Usuario.id_Usuario = dbo.Tabla_DatosUsuario.id_Usuario
 
 GO
-/****** Object:  View [dbo].[Vista_BusquedaEjercicioDatalistWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_BusquedaEjercicioDatalistWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -782,7 +785,7 @@ FROM            dbo.Tabla_BusquedaEjercicios INNER JOIN
                          dbo.Tabla_Ejercicios ON dbo.Tabla_BusquedaEjercicios.id_Ejericicio = dbo.Tabla_Ejercicios.id_Ejercicio
 
 GO
-/****** Object:  View [dbo].[Vista_CreditoUsuarioWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_CreditoUsuarioWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -794,7 +797,7 @@ FROM            dbo.Tabla_Usuario INNER JOIN
                          dbo.Tabla_UsuarioCredito ON dbo.Tabla_Usuario.id_Usuario = dbo.Tabla_UsuarioCredito.id_Usuario
 
 GO
-/****** Object:  View [dbo].[Vista_LogueoUsuariosWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_LogueoUsuariosWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -808,7 +811,7 @@ FROM            dbo.Tabla_DatosExtraUsuario INNER JOIN
                          dbo.Tabla_DatosUsuario ON dbo.Tabla_Usuario.id_Usuario = dbo.Tabla_DatosUsuario.id_Usuario
 
 GO
-/****** Object:  View [dbo].[Vista_MostrarEnunciadoDatalistWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_MostrarEnunciadoDatalistWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -821,7 +824,7 @@ FROM            dbo.Tabla_Ejercicios INNER JOIN
 GROUP BY dbo.Tabla_UbicacionEjercicios.ubicacionVideo, dbo.Tabla_Ejercicios.id_Ejercicio
 
 GO
-/****** Object:  View [dbo].[Vista_MostrarListadoDeEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_MostrarListadoDeEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -835,7 +838,37 @@ FROM            dbo.Tabla_Ejercicios INNER JOIN
                          dbo.Tabla_EnunciadoEjercicios ON dbo.Tabla_Ejercicios.id_Ejercicio = dbo.Tabla_EnunciadoEjercicios.id_Ejercicio
 
 GO
-/****** Object:  View [dbo].[Vista_PanelControlUsuarioWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_MostrarListadoMisEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[Vista_MostrarListadoMisEjercicios]
+AS
+SELECT        dbo.Tabla_MisEjercicios.id_CompraEjercicioExplicaicones, dbo.Tabla_MisEjercicios.id_Ejercicio, dbo.Tabla_MisEjercicios.ejercicio, dbo.Tabla_MisEjercicios.explicacion, dbo.Tabla_MisEjercicios.venvimiento, 
+                         dbo.Tabla_MisEjercicios.fechaVencimiento, dbo.Tabla_MisEjercicios.id_Usuario, dbo.Tabla_Ejercicios.Titulo, dbo.Tabla_Empresa.empresa
+FROM            dbo.Tabla_MisEjercicios INNER JOIN
+                         dbo.Tabla_Usuario ON dbo.Tabla_MisEjercicios.id_Usuario = dbo.Tabla_Usuario.id_Usuario INNER JOIN
+                         dbo.Tabla_Empresa ON dbo.Tabla_Usuario.id_Empresa = dbo.Tabla_Empresa.id_Empresa INNER JOIN
+                         dbo.Tabla_Ejercicios ON dbo.Tabla_MisEjercicios.id_Ejercicio = dbo.Tabla_Ejercicios.id_Ejercicio
+
+GO
+/****** Object:  View [dbo].[Vista_MostrarListadoMisExplicaciones]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[Vista_MostrarListadoMisExplicaciones]
+AS
+SELECT        dbo.Tabla_MisExplicaciones.id_CompraVideos, dbo.Tabla_MisExplicaciones.id_Ejercicio, dbo.Tabla_MisExplicaciones.video, dbo.Tabla_MisExplicaciones.vencimiento, 
+                         dbo.Tabla_MisExplicaciones.fechaVencimiento, dbo.Tabla_MisExplicaciones.id_Usuario, dbo.Tabla_Ejercicios.Titulo, dbo.Tabla_Empresa.id_Empresa
+FROM            dbo.Tabla_MisExplicaciones INNER JOIN
+                         dbo.Tabla_Ejercicios ON dbo.Tabla_MisExplicaciones.id_Ejercicio = dbo.Tabla_Ejercicios.id_Ejercicio INNER JOIN
+                         dbo.Tabla_Usuario ON dbo.Tabla_MisExplicaciones.id_Usuario = dbo.Tabla_Usuario.id_Usuario INNER JOIN
+                         dbo.Tabla_Empresa ON dbo.Tabla_Usuario.id_Empresa = dbo.Tabla_Empresa.id_Empresa
+
+GO
+/****** Object:  View [dbo].[Vista_PanelControlUsuarioWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -848,7 +881,7 @@ FROM            dbo.Tabla_Usuario INNER JOIN
                          dbo.Tabla_DatosUsuario ON dbo.Tabla_Usuario.id_Usuario = dbo.Tabla_DatosUsuario.id_Usuario
 
 GO
-/****** Object:  View [dbo].[Vista_PanelSaldoUsuarioWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_PanelSaldoUsuarioWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -862,7 +895,7 @@ FROM            dbo.Tabla_Movimientos INNER JOIN
                          dbo.Tabla_TipoMovimientos ON dbo.Tabla_Movimientos.id_TipoMovimiento = dbo.Tabla_TipoMovimientos.id_TipoMovimiento
 
 GO
-/****** Object:  View [dbo].[Vista_RecuperarContraseñaWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  View [dbo].[Vista_RecuperarContraseñaWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -875,7 +908,7 @@ FROM            dbo.Tabla_Usuario INNER JOIN
                          dbo.Tabla_DatosUsuario ON dbo.Tabla_Usuario.id_Usuario = dbo.Tabla_DatosUsuario.id_Usuario
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_Ano](
 [ano] LANGUAGE 'Spanish')
 KEY INDEX [PK_Tabla_Ano]ON ([Busquedas], FILEGROUP [PRIMARY])
@@ -883,7 +916,7 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_BuquedasEjercicios](
 [etiquetaAno] LANGUAGE 'Spanish', 
 [etiquetaColegio] LANGUAGE 'Spanish', 
@@ -895,7 +928,7 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_Colegio](
 [colegio] LANGUAGE 'Spanish')
 KEY INDEX [PK_Tabla_Colegio]ON ([Busquedas], FILEGROUP [PRIMARY])
@@ -903,7 +936,7 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_EnunciadoEjercicios](
 [enunciadoLimpio] LANGUAGE 'Spanish', 
 [enunciadoMath] LANGUAGE 'Spanish')
@@ -912,7 +945,7 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_Materia](
 [materia] LANGUAGE 'Spanish')
 KEY INDEX [PK_Tabla_Materia]ON ([Busquedas], FILEGROUP [PRIMARY])
@@ -920,7 +953,7 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_Profesor](
 [profesor] LANGUAGE 'Spanish')
 KEY INDEX [PK_Tabla_Profesor]ON ([Busquedas], FILEGROUP [PRIMARY])
@@ -928,21 +961,13 @@ WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
 GO
-/****** Object:  FullTextIndex     Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  FullTextIndex     Script Date: 23/05/2016 14:59:47 ******/
 CREATE FULLTEXT INDEX ON [dbo].[Tabla_Tema](
 [tema] LANGUAGE 'Spanish')
 KEY INDEX [PK_Tabla_Tema]ON ([Busquedas], FILEGROUP [PRIMARY])
 WITH (CHANGE_TRACKING = AUTO, STOPLIST = OFF)
 
 
-GO
-ALTER TABLE [dbo].[Tabla_MisEjercicios] ADD  CONSTRAINT [DF_Tabla_MisEjercicios_id_CompraEjercicioExplicaicones]  DEFAULT (NEXT VALUE FOR [secuancia_MisEjercicios]) FOR [id_CompraEjercicioExplicaicones]
-GO
-ALTER TABLE [dbo].[Tabla_MisExplicaciones] ADD  CONSTRAINT [DF_Tabla_MisExplicaciones_id_CompraVideos]  DEFAULT (NEXT VALUE FOR [secuancia_MisExplicaciones]) FOR [id_CompraVideos]
-GO
-ALTER TABLE [dbo].[Tabla_PedidoEjercicioVideo] ADD  CONSTRAINT [DF_Tabla_PedidoEjercicioVideo_id_PedidoEjercicioVideo]  DEFAULT (NEXT VALUE FOR [secuancia_PedidoEjercicioVideo]) FOR [id_PedidoEjercicioVideo]
-GO
-ALTER TABLE [dbo].[Tabla_PedidoExplicacion] ADD  CONSTRAINT [DF_Tabla_PedidoExplicacion_id_PedidoExplicacion]  DEFAULT (NEXT VALUE FOR [secuancia_TablaPedidoExplicacion]) FOR [id_PedidoExplicacion]
 GO
 ALTER TABLE [dbo].[Tabla_Profesor] ADD  CONSTRAINT [DF_Tabla_Profesor_id_Profesor]  DEFAULT (NEXT VALUE FOR [secuancia_Profesor]) FOR [id_Profesor]
 GO
@@ -1091,7 +1116,7 @@ ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[Tabla_ValorOfertas] CHECK CONSTRAINT [FK_Tabla_ValorOfertas_Tabla_Empresa]
 GO
-/****** Object:  StoredProcedure [dbo].[bloqueCompraEjercicio]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[bloqueCompraEjercicio]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1130,7 +1155,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[bloqueCompraExplicacion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[bloqueCompraExplicacion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1169,7 +1194,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[bloqueCompraImpresion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[bloqueCompraImpresion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1208,7 +1233,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[bloqueCompraVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[bloqueCompraVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1247,7 +1272,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[buscarEnTablaAnos]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[buscarEnTablaAnos]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1268,7 +1293,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[buscarEnTablaColegios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[buscarEnTablaColegios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1290,7 +1315,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[buscarEnTablaMaterias]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[buscarEnTablaMaterias]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1312,7 +1337,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[buscarEnTablaProfesores]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[buscarEnTablaProfesores]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1335,7 +1360,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[buscarEnTablaTemas]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[buscarEnTablaTemas]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1356,7 +1381,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargadorOfertasAumentoCarga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargadorOfertasAumentoCarga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1421,7 +1446,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargadorOfertasProximaCarga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargadorOfertasProximaCarga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1488,7 +1513,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargadorOfertasRegaloCarga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargadorOfertasRegaloCarga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1553,7 +1578,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargarCreditoTarjetaPagoParcialSOS]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargarCreditoTarjetaPagoParcialSOS]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1602,7 +1627,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargarCreditoTarjetaPagoTotalSOS]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargarCreditoTarjetaPagoTotalSOS]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1649,42 +1674,69 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargarMovimientoCompra]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargarPedidoEjercicioVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE proc [dbo].[cargarMovimientoCompra] (@id_Usuario int,@cargaCredito decimal(18,2), @empresa int,@id_TipoMovimiento int, @resultadoPrestamo decimal(18,2) output) as
+create proc [dbo].[cargarPedidoEjercicioVideo] (@id_Usuario int, @fichaEjercicioVideo nvarchar(50), @enunciadoEjercicioVideoMath nvarchar(50), @adjuntoEjercicioVideo nvarchar(50)) as
 
-Begin Try
+begin try
 
-	Declare @id_Movimiento int
+	Declare @id_PedidoEjercicioVideo int
 
-	Select @id_Movimiento = MAX(id_Movimiento) from Tabla_Movimientos 
+	select @id_PedidoEjercicioVideo = MAX(id_PedidoEjercicioVideo) from Tabla_PedidoEjercicioVideo
 
-	if @id_Movimiento is null
+	if @id_PedidoEjercicioVideo is null
 
 		begin
 
-			set @id_Movimiento = 0
-
+			set @id_PedidoEjercicioVideo = 0
+			
 		end
+		
+	insert into Tabla_PedidoEjercicioVideo (id_PedidoEjercicioVideo, id_Usuario, id_Administrador, fechaPedidoEjercicioVideo, fichaEjercicioVideo, enunciadoEjercicioVideoMATH, adjuntoEjercicioVideo, realizadoOKPedidoEjercicioVideo,pedidoExplicacion) values (@id_PedidoEjercicioVideo + 1, @id_Usuario, null, getdate(), @fichaEjercicioVideo, @enunciadoEjercicioVideoMath,@adjuntoEjercicioVideo,0,1)
 
-	insert into Tabla_Movimientos(id_Movimiento, id_Usuario, id_tipoMovimiento, debe, haber, fechaMovimiento) values (@id_Movimiento + 1,@id_Usuario, @id_TipoMovimiento, null, @cargaCredito, getdate())
-	
-	update Tabla_UsuarioCredito set prestamoReal = (0 - @resultadoPrestamo) where id_Usuario = @id_Usuario
+end try
 
-	return @resultadoPrestamo
- 
-End try
-
-Begin Catch
+begin catch
 
 	return -6
 
-end Catch
+end catch
 GO
-/****** Object:  StoredProcedure [dbo].[cargarPrestamoSOS]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargarPedidoEjercicioVideoEjercicio]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[cargarPedidoEjercicioVideoEjercicio] (@id_Usuario int, @fichaEjercicioVideo nvarchar(50), @enunciadoEjercicioVideoMath nvarchar(50), @adjuntoEjercicioVideo nvarchar(50)) as
+
+begin try
+
+	Declare @id_PedidoEjercicioVideo int
+
+	select @id_PedidoEjercicioVideo = MAX(id_PedidoEjercicioVideo) from Tabla_PedidoEjercicioVideo
+
+	if @id_PedidoEjercicioVideo is null
+
+		begin
+
+			set @id_PedidoEjercicioVideo = 0
+			
+		end
+		
+	insert into Tabla_PedidoEjercicioVideo (id_PedidoEjercicioVideo, id_Usuario, id_Administrador, fechaPedidoEjercicioVideo, fichaEjercicioVideo, enunciadoEjercicioVideoMATH, adjuntoEjercicioVideo, realizadoOKPedidoEjercicioVideo, pedidoExplicacion) values (@id_PedidoEjercicioVideo + 1, @id_Usuario, null, getdate(), @fichaEjercicioVideo, @enunciadoEjercicioVideoMath,@adjuntoEjercicioVideo,0,0)
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[cargarPrestamoSOS]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1719,7 +1771,7 @@ Begin Catch
 	
 End Catch 
 GO
-/****** Object:  StoredProcedure [dbo].[cargaTarjetaPrepaga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[cargaTarjetaPrepaga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1752,12 +1804,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[compraEjerciciosDataListWeb]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraEjerciciosDataListWeb]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE proc [dbo].[compraEjerciciosDataListWeb](@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int, @resultadoCompra bit output) as
+CREATE proc [dbo].[compraEjerciciosDataListWeb](@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int,@tipoMovimiento int,@diasExtras int, @resultadoCompra bit output) as
 
 Begin try
 
@@ -1773,23 +1825,40 @@ Begin try
 
 	select @vencimiento = duracionEjercicios from Tabla_DuracionProductos where id_Empresa = @empresa
 
-	set @fechaVencimiento = dateadd (day, @vencimiento,getdate())
+	set @fechaVencimiento = dateadd (day, @vencimiento + @diasExtras,getdate())
 
 	select @creditoUsuario = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
 
 	set @calculoAuxiliar = @creditoUsuario - @precioCompra 
 	
-	select @id_Movimiento = id_Movimiento from Tabla_Movimientos 
+	select @id_Movimiento = Max(id_Movimiento) from Tabla_Movimientos
+	
+	if @id_Movimiento is null
+
+		begin
+
+			set @id_Movimiento = 0
+
+		end	 
 
 	Declare @id_CompraEjercicioExplicaicones int
 
 	select @id_CompraEjercicioExplicaicones = MAX(id_CompraEjercicioExplicaicones) from Tabla_MisEjercicios
 
+	if @id_CompraEjercicioExplicaicones is null
+
+		begin
+
+			set @id_CompraEjercicioExplicaicones = 0
+
+		end
+
+
 	If exists (select @id_Ejercicio from Tabla_MisEjercicios where id_Ejercicio = @id_Ejercicio and explicacion = 1)
 	
 	Begin
 	
-		update Tabla_MisEjercicios set  id_Ejercicio = @id_Ejercicio,  ejercicio = 1, venvimiento = @vencimiento where id_CompraEjercicioExplicaicones = @id_CompraEjercicioExplicaicones
+		update Tabla_MisEjercicios set  id_Ejercicio = @id_Ejercicio,  ejercicio = 1, venvimiento = @vencimiento + @diasExtras where id_CompraEjercicioExplicaicones = @id_CompraEjercicioExplicaicones
 
 	end
 
@@ -1797,13 +1866,13 @@ Begin try
 	
 	Begin
 	
-		insert into Tabla_MisEjercicios (id_CompraEjercicioExplicaicones,id_Ejercicio,id_Usuario,ejercicio,explicacion,venvimiento,fechaVencimiento) values (@id_CompraEjercicioExplicaicones + 1 , @id_Ejercicio, @id_Usuario,  1, 0, @vencimiento, @fechaVencimiento)
+		insert into Tabla_MisEjercicios (id_CompraEjercicioExplicaicones,id_Ejercicio,id_Usuario,ejercicio,explicacion,venvimiento,fechaVencimiento) values (@id_CompraEjercicioExplicaicones + 1 , @id_Ejercicio, @id_Usuario,  1, 0, @vencimiento + @diasExtras, @fechaVencimiento)
 		
 	End  
 			
 	update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
 
-	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, 7, @id_Usuario, null, @precioCompra, getdate())
+	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, @tipoMovimiento, @id_Usuario, null, @precioCompra, getdate())
 	
 	set @resultadoCompra = 1
 
@@ -1819,7 +1888,7 @@ end catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[compraEjerciciosEnunciadoProfesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraEjerciciosEnunciadoProfesor]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1886,7 +1955,7 @@ end catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[compraEjerciciosFichaProfesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraEjerciciosFichaProfesor]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1951,74 +2020,7 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[compraExplicacionDataListWeb]    Script Date: 17/05/2016 1:45:52 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE proc [dbo].[compraExplicacionDataListWeb](@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int, @resultadoCompra bit output) as
-
-Begin try
-
-	Declare @id_Movimiento int
-
-	declare @calculoAuxiliar decimal(18,2)
-
-	declare @creditoUsuario decimal (18,2)
-
-	Declare @vencimiento int
-
-	Declare @fechaVencimiento datetime
-
-	select @vencimiento = duracionEjercicios from Tabla_DuracionProductos where id_Empresa = @empresa
-
-	set @fechaVencimiento = dateadd (day, @vencimiento,getdate())
-	
-	select @creditoUsuario = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
-
-	set @calculoAuxiliar = @creditoUsuario - @precioCompra 
-	
-	select @id_Movimiento = id_Movimiento from Tabla_Movimientos 
-
-	Declare @id_CompraEjercicioExplicaicones int
-
-	select @id_CompraEjercicioExplicaicones = MAX(id_CompraEjercicioExplicaicones) from Tabla_MisEjercicios
-
-	If exists (select @id_Ejercicio from Tabla_MisEjercicios where id_Ejercicio = @id_Ejercicio and ejercicio = 1)
-	
-	Begin
-	
-		update Tabla_MisEjercicios set id_Ejercicio = @id_Ejercicio,  explicacion = 1, venvimiento = @vencimiento where id_CompraEjercicioExplicaicones = @id_CompraEjercicioExplicaicones
-
-	end
-
-	If not exists (select @id_Ejercicio from Tabla_MisEjercicios where id_Ejercicio = @id_Ejercicio and ejercicio = 1)
-	
-	Begin
-	
-		insert into Tabla_MisEjercicios (id_CompraEjercicioExplicaicones,id_Ejercicio,id_Usuario,ejercicio,explicacion,venvimiento,fechaVencimiento) values (@id_CompraEjercicioExplicaicones + 1 , @id_Ejercicio, @id_Usuario,  0, 1, @vencimiento, @fechaVencimiento)
-		
-	End  
-		
-	update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
-
-	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, 8, @id_Usuario, null, @precioCompra, getdate())
-	
-	set @resultadoCompra = 1
-
-	return @resultadoCompra
-
-End try
-
-begin catch
-
-	return -6
-
-end catch
-
-
-GO
-/****** Object:  StoredProcedure [dbo].[compraExplicacionEnunciadoProfesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraExplicacionEnunciadoProfesor]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2085,7 +2087,118 @@ end catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[compraExplicacionFichaProfesor]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraExplicacionesDataListWeb]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[compraExplicacionesDataListWeb](@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int,@tipoMovimiento int,@diasExtras int, @resultadoCompra bit output) as
+
+Begin try
+
+	Declare @id_Movimiento int
+
+	declare @calculoAuxiliar decimal(18,2)
+
+	declare @creditoUsuario decimal (18,2)
+
+	Declare @vencimiento int
+
+	Declare @fechaVencimiento datetime
+
+	select @vencimiento = duracionEjercicios from Tabla_DuracionProductos where id_Empresa = @empresa
+
+	set @fechaVencimiento = dateadd (day, @vencimiento + @diasExtras,getdate())
+
+	select @creditoUsuario = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
+
+	set @calculoAuxiliar = @creditoUsuario - @precioCompra 
+	
+	select @id_Movimiento = Max(id_Movimiento) from Tabla_Movimientos
+	
+	if @id_Movimiento is null
+
+		begin
+
+			set @id_Movimiento = 0
+
+		end	 
+
+	Declare @id_CompraEjercicioExplicaicones int
+
+	select @id_CompraEjercicioExplicaicones = MAX(id_CompraEjercicioExplicaicones) from Tabla_MisEjercicios
+
+	if @id_CompraEjercicioExplicaicones is null
+
+		begin
+
+			set @id_CompraEjercicioExplicaicones = 0
+
+		end
+	
+	Declare @id_PedidoExplicacion int
+
+	select @id_PedidoExplicacion = MAX(id_PedidoExplicacion) from Tabla_PedidoExplicacion
+
+	If @id_PedidoExplicacion is null
+
+		Begin
+
+			set @id_PedidoExplicacion = 0
+
+		end
+
+	Declare @explicacionRealizada bit
+
+	select @explicacionRealizada = explicacionRealizada from Tabla_Ejercicios where id_Ejercicio = @id_Ejercicio
+
+	if @explicacionRealizada = 0 -- me avisa que la tabla ejercicios no tiene explicacion 
+
+		Begin 
+
+			update Tabla_Ejercicios set explicacionRealizada = 1 where ID_Ejercicio = @ID_Ejercicio
+
+			insert into Tabla_PedidoExplicacion (id_PedidoExplicacion,id_Usuario,id_Ejercicio,fechaPedidoExplicacion,id_Administrador,realizadoOK, id_Empresa) values (@id_PedidoExplicacion + 1, @id_Usuario,@id_Ejercicio,getdate(),null,0,@empresa)
+				
+			update Tabla_UbicacionEjercicios set ubicacionVideo = 'en breve la explicacion' where id_Ejercicio = @id_Ejercicio
+
+		End -- fin de aclaracion para que ponga en breve
+
+	If exists (select @id_Ejercicio from Tabla_MisEjercicios where id_Ejercicio = @id_Ejercicio and ejercicio = 1  and id_Usuario = @id_Usuario) -- me avisa que la tabla ya cargo el ejercicio
+		
+	Begin			
+
+		update Tabla_MisEjercicios set  id_Ejercicio = @id_Ejercicio,  explicacion = 1, venvimiento = @vencimiento + @diasExtras where id_CompraEjercicioExplicaicones = @id_CompraEjercicioExplicaicones
+
+	end
+
+	If not exists (select @id_Ejercicio from Tabla_MisEjercicios where id_Ejercicio = @id_Ejercicio and ejercicio = 1 and id_Usuario = @id_Usuario) -- no tiene el ejercicio comprado
+	
+	Begin
+		
+		insert into Tabla_MisEjercicios (id_CompraEjercicioExplicaicones,id_Ejercicio,id_Usuario,ejercicio,explicacion,venvimiento,fechaVencimiento) values (@id_CompraEjercicioExplicaicones + 1 , @id_Ejercicio, @id_Usuario,  0, 1, @vencimiento + @diasExtras, @fechaVencimiento)
+		
+	End  
+			
+	update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
+
+	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, @tipoMovimiento, @id_Usuario, null, @precioCompra, getdate())
+	
+	set @resultadoCompra = 1
+
+	return @resultadoCompra
+
+End try
+
+begin catch
+
+	return -6
+
+end catch
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[compraExplicacionFichaProfesor]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2152,7 +2265,138 @@ end catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[consultaCreditoUsuario]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[compraImpresionDataList]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[compraImpresionDataList] (@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int,@tipoMovimiento int, @resultadoCompra bit output) as
+
+Begin try
+
+	Declare @id_Movimiento int
+
+	declare @calculoAuxiliar decimal(18,2)
+
+	declare @creditoUsuario decimal (18,2)
+	
+	select @creditoUsuario = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
+
+	set @calculoAuxiliar = @creditoUsuario - @precioCompra 
+	
+	select @id_Movimiento = Max(id_Movimiento) from Tabla_Movimientos
+	
+	if @id_Movimiento is null
+
+		begin
+
+			set @id_Movimiento = 0
+
+		end	 
+			
+	update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
+
+	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, @tipoMovimiento, @id_Usuario, null, @precioCompra, getdate())
+	
+	set @resultadoCompra = 1
+
+	return @resultadoCompra
+
+End try
+
+begin catch
+
+	return -6
+
+end catch
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[compraVideosDataListWeb]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[compraVideosDataListWeb](@id_Usuario int, @id_Ejercicio int,@precioCompra decimal(18,2), @empresa int,@tipoMovimiento int,@diasExtras int, @resultadoCompra bit output) as
+
+Begin try
+
+	Declare @id_Movimiento int
+
+	declare @calculoAuxiliar decimal(18,2)
+
+	declare @creditoUsuario decimal (18,2)
+
+	Declare @vencimiento int
+
+	Declare @fechaVencimiento datetime
+
+	select @vencimiento = duracionEjercicios from Tabla_DuracionProductos where id_Empresa = @empresa
+
+	set @fechaVencimiento = dateadd (day, @vencimiento + @diasExtras,getdate())
+
+	select @creditoUsuario = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
+
+	set @calculoAuxiliar = @creditoUsuario - @precioCompra 
+	
+	select @id_Movimiento = Max(id_Movimiento) from Tabla_Movimientos
+	
+	if @id_Movimiento is null
+
+		begin
+
+			set @id_Movimiento = 0
+
+		end	 
+
+	Declare @id_CompraVideos int
+
+	select @id_CompraVideos = MAX(id_CompraVideos) from Tabla_MisExplicaciones
+
+	if @id_CompraVideos is null
+
+		begin
+
+			set @id_CompraVideos = 0
+
+		end
+
+
+	If exists (select @id_Ejercicio from Tabla_MisExplicaciones where id_Ejercicio = @id_Ejercicio and video = 1)
+	
+	Begin
+	
+		update Tabla_MisExplicaciones set  id_Ejercicio = @id_Ejercicio,  video = 1, vencimiento = @vencimiento + @diasExtras where id_CompraVideos = @id_CompraVideos
+
+	end
+
+	If not exists (select @id_Ejercicio from Tabla_MisExplicaciones where id_Ejercicio = @id_Ejercicio and video = 1)
+	
+	Begin
+	
+		insert into Tabla_MisExplicaciones (id_CompraVideos,id_Ejercicio,id_Usuario,video,vencimiento,fechaVencimiento) values (@id_CompraVideos + 1 , @id_Ejercicio, @id_Usuario, 1, @vencimiento + @diasExtras, @fechaVencimiento)
+		
+	End  
+			
+	update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
+
+	insert into Tabla_Movimientos (id_Movimiento,id_TipoMovimiento, id_Usuario, debe, haber, fechaMovimiento) values (@id_Movimiento + 1, @tipoMovimiento, @id_Usuario, null, @precioCompra, getdate())
+	
+	set @resultadoCompra = 1
+
+	return @resultadoCompra
+
+End try
+
+begin catch
+
+	return -6
+
+end catch
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[consultaCreditoUsuario]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2174,7 +2418,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[consultaPanelControl]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[consultaPanelControl]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2194,7 +2438,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[consultaPanelMovimiento]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[consultaPanelMovimiento]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2214,7 +2458,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[descontarDiasBorrar]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[descontarDiasBorrar]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2240,7 +2484,7 @@ begin Catch
 end catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[determinarEjercicioOVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[determinarEjercicioOVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2260,7 +2504,7 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[evitarRecompraEjercicio1]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[evitarRecompraEjercicio1]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2272,12 +2516,16 @@ Begin Try
 	if exists (select id_Ejercicio from Tabla_MisEjercicios where id_usuario = @id_usuario and ejercicio = 1 and id_Ejercicio = @id_Ejercicio and fechaVencimiento > getdate()) -- para evitar que aparezca dia cero
 
 		Begin
+			
+			set @respuestaCompra = 0
 
-			return -1
+			return @respuestaCompra 
 
 		End
 
-		return 1
+		set @respuestaCompra = 1
+
+		return @respuestaCompra 
 		
 End Try
 
@@ -2287,7 +2535,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[evitarRecompraExplicacion1]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[evitarRecompraExplicacion1]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2299,12 +2547,16 @@ Begin Try
 	if exists (select id_Ejercicio from Tabla_MisEjercicios where explicacion = 1 and id_Usuario = @id_Usuario and id_Ejercicio = @id_Ejercicio and fechaVencimiento > getdate()) -- para evitar que aparezca dia cero
 
 		Begin
+			
+			set @respuestaCompra = 0
 
-			return -1
+			return @respuestaCompra 
 
 		End
-		
-		return 1
+
+		set @respuestaCompra = 1
+
+		return @respuestaCompra 
 
 End Try
 
@@ -2314,7 +2566,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[evitarRecompraVideo1]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[evitarRecompraVideo1]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2326,10 +2578,16 @@ Begin Try
 	if exists (select id_Ejercicio from Tabla_MisExplicaciones where video = 1 and id_Ejercicio = @id_Ejercicio and fechaVencimiento > getdate() and id_Usuario = @id_Usuario) -- para evitar que aparezca dia cero
 
 		Begin
+			
+			set @respuestaCompra = 0
 
-			return -1
+			return @respuestaCompra 
 
 		End
+
+		set @respuestaCompra = 1
+
+		return @respuestaCompra 
 		
 End Try
 
@@ -2339,7 +2597,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[mensajeCliente]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[mensajeCliente]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2377,7 +2635,7 @@ Begin Catch
 end Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioCorreo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioCorreo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2407,7 +2665,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioCorreoTelefono]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioCorreoTelefono]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2437,7 +2695,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioTelefono]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[modificarPanelControlCambioTelefono]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2467,16 +2725,17 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[mostrarEnunciadoImprimible]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[mostrarEnunciadoImprimible]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[mostrarEnunciadoImprimible] (@id_Ejercicio int) as
+CREATE proc [dbo].[mostrarEnunciadoImprimible] (@id_Ejercicio int, @respuestaEjercicio nvarchar(40) output) as
 
 begin try 
 
-	select ubicacionImprimible from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	select @respuestaEjercicio = ubicacionImprimible from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	return @respuestaEjercicio 
 
 end try
 
@@ -2486,16 +2745,17 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[mostrarEnunciadoVisible]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[mostrarEnunciadoVisible]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[mostrarEnunciadoVisible] (@id_Ejercicio int) as
+CREATE proc [dbo].[mostrarEnunciadoVisible] (@id_Ejercicio int, @respuestaEjercicio nvarchar(40) output) as
 
 begin try 
 
-	select ubicacionVisible from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	select @respuestaEjercicio = ubicacionVisible from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	return @respuestaEjercicio
 
 end try
 
@@ -2505,16 +2765,17 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[mostrarRespuestaVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[mostrarRespuestaVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[mostrarRespuestaVideo] (@id_Ejercicio int) as
+CREATE proc [dbo].[mostrarRespuestaVideo] (@id_Ejercicio int, @respuestaEjercicio nvarchar(40) output) as
 
 begin try 
 
-	select ubicacionVideo from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	select @respuestaEjercicio = ubicacionVideo from Tabla_UbicacionEjercicios where id_Ejercicio = @id_Ejercicio
+	return @respuestaEjercicio
 
 end try
 
@@ -2524,7 +2785,206 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaAumentoDias7]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[obtenerPedidoEjericicoVideo]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[obtenerPedidoEjericicoVideo] (@numeroPedido int output) as
+
+begin try
+
+	select @numeroPedido = MAX(id_PedidoEjercicioVideo) from Tabla_PedidoEjercicioVideo 
+
+	if @numeroPedido is null
+
+		begin
+
+			set @numeroPedido = 0
+
+		end
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[ofertaActivada]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[ofertaActivada](@empresa int, @respuestaActivada int output) as
+
+begin try
+
+	Declare @validez bit
+
+	select  @validez = oferta_6DosXUno from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 1
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_7DosXUnoIgualProducto from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 2
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_8Gratis from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 3
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_9DescuentoSegundo from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 4
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_10BonificaciónHabitue from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 5
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_11AumentoDiasCompras from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 6
+
+			return @respuestaActivada
+
+		end
+	
+	select  @validez = oferta_12AumentoDiasTodasCompras from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 7
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_13DescuentoCompra from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 8
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_14ImpresionGratis from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 9
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_15VideosGratis from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 10
+
+			return @respuestaActivada
+
+		end
+	
+	select  @validez = oferta_16EjerciciosGratis from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 11
+
+			return @respuestaActivada
+
+		end
+
+	select  @validez = oferta_17ExplicacionesGratis from Tabla_Ofertas where id_Empresa = @empresa
+	
+	if (@validez = 1)
+
+		begin
+
+			set @respuestaActivada = 12
+
+			return @respuestaActivada
+
+		end
+
+	set @respuestaActivada = 0
+
+	return @respuestaActivada
+
+end try
+
+begin catch
+
+
+
+end catch
+
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[ofertaAumentoDias7]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2549,12 +3009,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaAumentoDiasTodasCompras8]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaAumentoDiasTodasCompras8]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaAumentoDiasTodasCompras8] (@id_Usuario int,@empresa int, @respuestaDias int output) as
+CREATE proc [dbo].[ofertaAumentoDiasTodasCompras8] (@id_Usuario int,@empresa int) as
 
 Begin Try
 
@@ -2562,9 +3022,9 @@ Begin Try
 
 	select @oferta_12ValorAumentoDiasTodasCompras = oferta_12ValorAumentoDiasTodasCompras from Tabla_ValorOfertas where id_Empresa = @empresa
 	
-	set @respuestaDias = @oferta_12ValorAumentoDiasTodasCompras
+	update Tabla_MisEjercicios set venvimiento = venvimiento + @oferta_12ValorAumentoDiasTodasCompras 
 
-	return @respuestaDias
+	update Tabla_MisExplicaciones set vencimiento = vencimiento + @oferta_12ValorAumentoDiasTodasCompras
 				
 End Try
 
@@ -2574,12 +3034,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaBonificacionHabitue6]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaBonificacionHabitue6]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE proc [dbo].[ofertaBonificacionHabitue6] (@id_Usuario int,@empresa int, @respuestaRecarga int output) as
+CREATE proc [dbo].[ofertaBonificacionHabitue6] (@id_Usuario int,@empresa int) as
 
 Begin Try
 	
@@ -2630,17 +3090,9 @@ Begin Try
 			set @calculoAuxiliar = @calculoAuxiliar + @recargaHabitue
 
 			update Tabla_UsuarioCredito set creditoUsuario = @calculoAuxiliar where id_Usuario = @id_Usuario
-
-			set @respuestaRecarga = 1
-
-			return @respuestarecarga
-
+			
 		end
-
-		set @respuestarecarga = 0
-
-		return @respuestarecarga
-				
+							
 End Try
 
 Begin Catch
@@ -2649,17 +3101,17 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaCompraEjercicioGratis10]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaCompraEjercicioGratis10]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 /****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraVideo9]    Script Date: 24/04/2016 2:49:38 ******/
-create proc [dbo].[ofertaCompraEjercicioGratis10] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaCompraEjercicioGratis10] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
-	set @respuestaValorTipoCompra = '0?7'
+	set @respuestaValorTipoCompra = '0?7?0'
 
 	return @respuestaValorTipoCompra
 
@@ -2672,7 +3124,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaCompraExplicacionGratis10]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaCompraExplicacionGratis10]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2682,7 +3134,7 @@ CREATE proc [dbo].[ofertaCompraExplicacionGratis10] (@id_Usuario int,@empresa in
 
 Begin Try
 	
-	set @respuestaValorTipoCompra = '0?8'
+	set @respuestaValorTipoCompra = '0?8?0'
 
 	return @respuestaValorTipoCompra
 
@@ -2695,7 +3147,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaCompraImpresionGratis10]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaCompraImpresionGratis10]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2718,17 +3170,17 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaCompraVideoGratis10]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaCompraVideoGratis10]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 /****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraVideo9]    Script Date: 24/04/2016 2:49:38 ******/
-create proc [dbo].[ofertaCompraVideoGratis10] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaCompraVideoGratis10] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
-	set @respuestaValorTipoCompra = '0?9'
+	set @respuestaValorTipoCompra = '0?9?0'
 
 	return @respuestaValorTipoCompra
 
@@ -2741,7 +3193,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraEjercicio9]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraEjercicio9]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2762,7 +3214,7 @@ Begin Try
 		
 	set @calculoAuxiliar = @precioEjercicio - ((@precioEjercicio * @oferta_13ValorDescuentoCompra) / 100) 
 
-	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?7'
+	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?7?0'
 
 	return @respuestaValorTipoCompra
 				
@@ -2774,7 +3226,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraExplicacion9]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraExplicacion9]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2795,7 +3247,7 @@ Begin Try
 		
 	set @calculoAuxiliar = @precioExplicacion - ((@precioExplicacion * @oferta_13ValorDescuentoCompra) / 100) 
 
-	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?8'
+	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?8?0'
 
 	return @respuestaValorTipoCompra
 
@@ -2808,7 +3260,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraImpresion9]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraImpresion9]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2842,7 +3294,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraVideo9]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoCompraVideo9]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2863,7 +3315,7 @@ Begin Try
 		
 	set @calculoAuxiliar = @precioVideo - ((@precioVideo * @oferta_13ValorDescuentoCompra) / 100) 
 
-	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?9'
+	set @respuestaValorTipoCompra = CAST(@calculoAuxiliar as nvarchar(20)) + '?9?0'
 
 	return @respuestaValorTipoCompra
 
@@ -2876,12 +3328,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoEjercicio5]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoEjercicio5]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaDescuentoSegundoProductoEjercicio5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaDescuentoSegundoProductoEjercicio5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
@@ -2921,13 +3373,13 @@ Begin Try
 
 			set @calculoAuxiliarPrecio = @precioEjercicio - ((@precioEjercicio * @oferta_9ValorDescuentoSegundo) / 100)
 			
-			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '0?17'
+			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '?17?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7'
+		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -2941,12 +3393,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoExplicacion5]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoExplicacion5]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaDescuentoSegundoProductoExplicacion5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaDescuentoSegundoProductoExplicacion5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
@@ -2986,13 +3438,13 @@ Begin Try
 
 			set @calculoAuxiliarPrecio = @precioExplicacion - ((@precioExplicacion * @oferta_9ValorDescuentoSegundo) / 100)
 			
-			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '0?18'
+			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '?18?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioExplicacion as nvarchar(20)) + '?8'
+		set @respuestaValorTipoCompra = CAST(@precioExplicacion as nvarchar(20)) + '?8?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3006,7 +3458,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoImpresion5]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoImpresion5]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3071,12 +3523,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoVideo5]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDescuentoSegundoProductoVideo5]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaDescuentoSegundoProductoVideo5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaDescuentoSegundoProductoVideo5] (@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
@@ -3116,13 +3568,13 @@ Begin Try
 
 			set @calculoAuxiliarPrecio = @precioVideo - ((@precioVideo * @oferta_9ValorDescuentoSegundo) / 100)
 			
-			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '0?20'
+			set @respuestaValorTipoCompra = CAST(@calculoAuxiliarPrecio as nvarchar(20)) + '?20?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioVIdeo as nvarchar(20)) + '?9'
+		set @respuestaValorTipoCompra = CAST(@precioVIdeo as nvarchar(20)) + '?9?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3136,7 +3588,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDosXUno2]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDosXUno2]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3173,13 +3625,13 @@ Begin Try
 		
 		begin
 			
-			set @respuestaValorTipoCompra = '0?12'
+			set @respuestaValorTipoCompra = '0?12?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7'
+		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3193,7 +3645,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoEjercicio3]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoEjercicio3]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3230,13 +3682,13 @@ Begin Try
 		
 		begin
 			
-			set @respuestaValorTipoCompra = '0?13'
+			set @respuestaValorTipoCompra = '0?13?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7'
+		set @respuestaValorTipoCompra = CAST(@precioEjercicio as nvarchar(20)) + '?7?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3250,7 +3702,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoExplicacion3]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoExplicacion3]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3287,13 +3739,13 @@ Begin Try
 		
 		begin
 			
-			set @respuestaValorTipoCompra = '0?14'
+			set @respuestaValorTipoCompra = '0?14?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioExplicacion as nvarchar(20)) + '?8'
+		set @respuestaValorTipoCompra = CAST(@precioExplicacion as nvarchar(20)) + '?8?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3307,7 +3759,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoImpresion3]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoImpresion3]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3364,12 +3816,12 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoVideos3]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaDosXUnoIgualProductoVideos3]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaDosXUnoIgualProductoVideos3](@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaDosXUnoIgualProductoVideos3](@id_Usuario int,@empresa int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
@@ -3401,13 +3853,13 @@ Begin Try
 		
 		begin
 			
-			set @respuestaValorTipoCompra = '0?16'
+			set @respuestaValorTipoCompra = '0?16?0'
 
 			return @respuestaValorTipoCompra
 
 		end
 		
-		set @respuestaValorTipoCompra = CAST(@precioVideo as nvarchar(20)) + '?9'
+		set @respuestaValorTipoCompra = CAST(@precioVideo as nvarchar(20)) + '?9?0'
 
 		return @respuestaValorTipoCompra
 		
@@ -3421,16 +3873,16 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaGratis4]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaGratis4]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[ofertaGratis4](@id_Usuario int, @respuestaValorTipoCompra nvarchar(10) output) as
+CREATE proc [dbo].[ofertaGratis4](@id_Usuario int, @respuestaValorTipoCompra nvarchar(10) output) as
 
 Begin Try
 	
-	set @respuestaValorTipoCompra = '0?12'
+	set @respuestaValorTipoCompra = '0?12?0'
 
 	return @respuestaValorTipoCompra
 
@@ -3442,7 +3894,7 @@ Begin Catch
 
 End Catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaPrestamoSOSRealizado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaPrestamoSOSRealizado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3464,7 +3916,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaProximaCarga]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaProximaCarga]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3507,7 +3959,7 @@ begin catch
 
 end catch
 GO
-/****** Object:  StoredProcedure [dbo].[ofertaRegistro]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[ofertaRegistro]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3557,7 +4009,7 @@ CREATE proc [dbo].[ofertaRegistro] (@id_Usuario int, @empresa int, @respuestaOfe
 	
 	
 GO
-/****** Object:  StoredProcedure [dbo].[pedidoPrestamoSOS]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[pedidoPrestamoSOS]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3613,7 +4065,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[prestamoRealPedido]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[prestamoRealPedido]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3638,7 +4090,55 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioBusqueda]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDataListFicha]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[resultadoDataListFicha] (@profesor nvarchar(150), @ano nvarchar(150), @colegio nvarchar(150), @materia nvarchar(150), @Tema nvarchar(150)) as
+
+Begin try
+
+	select * from Tabla_Ejercicios where id_TipoEjercicio = 1 and id_Ejercicio in (select ID_Ejercicio from Tabla_BuquedasEjercicios where contains (etiquetaProfesor,@profesor) and contains (etiquetaAno,@ano) and contains (etiquetaColegio,@colegio) and contains (etiquetaMateria,@materia) and contains (etiquetaTema,@tema)) -- cuenta la cantidad de datos obtenidos por la busqueda de la ficha
+		
+end try
+
+Begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoDataListFichaPaginado]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[resultadoDataListFichaPaginado] (@profesor nvarchar(150), @ano nvarchar(150), @colegio nvarchar(150), @materia nvarchar(150), @Tema nvarchar(150), @pagina int output) as
+
+Begin try
+
+	select @pagina = Count(Titulo) from Tabla_Ejercicios where id_TipoEjercicio = 1 and id_Ejercicio in (select ID_Ejercicio from Tabla_BuquedasEjercicios where contains (etiquetaProfesor,@profesor) and contains (etiquetaAno,@ano) and contains (etiquetaColegio,@colegio) and contains (etiquetaMateria,@materia) and contains (etiquetaTema,@tema)) -- cuenta la cantidad de datos obtenidos por la busqueda de la ficha
+
+	If @pagina is null -- caso especial que quede vacio
+
+		begin 
+
+			set @pagina = 0
+
+			return @pagina;
+
+		end
+
+end try
+
+Begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioBusqueda]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3657,7 +4157,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioBusquedaPaginado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioBusquedaPaginado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3668,7 +4168,15 @@ Begin Try
 
 	select @paginas = COUNT(id_Ejercicio) from Tabla_Ejercicios where id_Ejercicio in (select id_Ejercicio from Tabla_BuquedasEjercicios where contains (etiquetaProfesor,@profesorEjercicio) and contains (etiquetaAno,@anoEjercicio) and contains (etiquetaColegio,@colegioEjercicio) and contains (etiquetaMateria,@materiaEjercicio) and contains (etiquetaTema,@temaEjercicio)) 
 
-	return @paginas
+	If @paginas is null -- caso especial que quede vacio
+
+		begin 
+
+			set @paginas = 0
+
+			return @paginas;
+
+		end
 
 end Try
 
@@ -3678,7 +4186,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioCompleta]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioCompleta]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3697,7 +4205,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioCompletaPaginado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioCompletaPaginado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3708,7 +4216,15 @@ Begin Try
 
 	select @paginas = COUNT(id_Ejercicio) from Tabla_Ejercicios 
 
-	return @paginas
+	If @paginas is null -- caso especial que quede vacio
+
+		begin 
+
+			set @paginas = 0
+
+			return @paginas;
+
+		end
 
 end Try
 
@@ -3718,7 +4234,7 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioEjercicios]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3737,7 +4253,124 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[resultadoMostrarEnunciado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[resultadoDatalistTitulosEjercicioEjerciciosPaginado]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[resultadoDatalistTitulosEjercicioEjerciciosPaginado] (@enunciadoEjercicio_1 nvarchar(150),@enunciadoEjercicio_2 nvarchar(150),@pagina int output) as
+
+Begin Try
+		
+	select @pagina = count(id_Ejercicio) from Tabla_EnunciadoEjercicios where contains (enunciadoLimpio,@enunciadoEjercicio_1) or contains (enunciadoLimpio,@enunciadoEjercicio_2) 
+	
+	return @pagina
+
+end Try
+
+Begin Catch
+
+	return -6
+
+end Catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoMisEjercicios]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[resultadoMisEjercicios](@id_Usuario int) as
+
+Begin try
+
+	Select * from Vista_MostrarListadoMisEjercicios where @id_Usuario = @id_Usuario and venvimiento >= 0 order by id_CompraEjercicioExplicaicones
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoMisEjerciciosPaginado]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[resultadoMisEjerciciosPaginado] (@id_Usuario int, @paginas int output) as
+
+Begin try
+
+	Select @paginas = count(id_Ejercicio) from Vista_MostrarListadoMisEjercicios where @id_Usuario = @id_Usuario and venvimiento >= 0 
+
+	If @paginas is null -- caso especial que quede vacio
+
+		begin 
+
+			set @paginas = 0
+
+			return @paginas;
+
+		end
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoMisExplicacionesPaginado]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE proc [dbo].[resultadoMisExplicacionesPaginado] (@id_Usuario int, @paginas int output) as
+
+Begin try
+
+	Select @paginas = count(id_Ejercicio) from Vista_MostrarListadoMisExplicaciones where @id_Usuario = @id_Usuario and vencimiento >= 0 
+
+	If @paginas is null -- caso especial que quede vacio
+
+		begin 
+
+			set @paginas = 0
+
+			return @paginas;
+
+		end
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoMisExplicaicones]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[resultadoMisExplicaicones](@id_Usuario int) as
+
+Begin try
+
+	Select * from Vista_MostrarListadoMisExplicaciones where @id_Usuario = @id_Usuario and vencimiento >= 0 order by id_CompraVideos
+
+end try
+
+begin catch
+
+	return -6
+
+end catch
+GO
+/****** Object:  StoredProcedure [dbo].[resultadoMostrarEnunciado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3756,28 +4389,32 @@ Begin Catch
 
 end Catch
 GO
-/****** Object:  StoredProcedure [dbo].[sinCreditoEjercicio]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[sinCreditoEjercicio]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE proc [dbo].[sinCreditoEjercicio] (@id_Usuario int, @empresa int, @usuarioCredito decimal(18,2), @respuestaCompra bit output) as
+CREATE proc [dbo].[sinCreditoEjercicio] (@id_Usuario int, @empresa int, @costoEjercicio decimal(18,2), @respuestaCompra bit output) as
 
 Begin Try
 
-	Declare @precioEjercicio decimal(18,2)
+	Declare @usuarioCredito decimal(18,2)
 
-	Select @precioEjercicio = precioEjercicio from Tabla_DuracionProductos where id_Empresa = @empresa
+	select @usuarioCredito = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
 
-	if @precioEjercicio < @usuarioCredito
-
+	if 0 > (@usuarioCredito - @costoEjercicio)
+	           
 		Begin
 
-			set @respuestaCompra = 1
+			set @respuestaCompra = 0
 
 			return @respuestaCompra
 
 		End
+
+		set @respuestaCompra = 1
+
+		return @respuestaCompra
 
 End Try
 
@@ -3788,28 +4425,32 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[sinCreditoExplicacion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[sinCreditoExplicacion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[sinCreditoExplicacion] (@id_Usuario int, @empresa int, @usuarioCredito decimal(18,2), @respuestaCompra bit output) as
+CREATE proc [dbo].[sinCreditoExplicacion] (@id_Usuario int, @empresa int, @costoExplicacion decimal(18,2), @respuestaCompra bit output) as
 
 Begin Try
 
-	Declare @precioExplicacion decimal(18,2)
+	Declare @usuarioCredito decimal(18,2)
 
-	Select @precioExplicacion = precioExplicacion from Tabla_DuracionProductos where id_Empresa = @empresa
+	select @usuarioCredito = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
 
-	if @precioExplicacion < @usuarioCredito
-
+	if 0 > (@usuarioCredito - @costoExplicacion)
+	           
 		Begin
 
-			set @respuestaCompra = 1
+			set @respuestaCompra = 0
 
 			return @respuestaCompra
 
 		End
+
+		set @respuestaCompra = 1
+
+		return @respuestaCompra
 
 End Try
 
@@ -3820,7 +4461,7 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[sinCreditoImpresion]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[sinCreditoImpresion]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3854,28 +4495,32 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[sinCreditoVideo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[sinCreditoVideo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create proc [dbo].[sinCreditoVideo] (@id_Usuario int, @empresa int, @usuarioCredito decimal(18,2), @respuestaCompra bit output) as
+CREATE proc [dbo].[sinCreditoVideo] (@id_Usuario int, @empresa int, @costoVideo decimal(18,2), @respuestaCompra bit output) as
 
 Begin Try
 
-	Declare @precioVideo decimal(18,2)
+	Declare @usuarioCredito decimal(18,2)
 
-	Select @precioVideo = precioVideo from Tabla_DuracionProductos where id_Empresa = @empresa
+	select @usuarioCredito = creditoUsuario from Tabla_UsuarioCredito where id_Usuario = @id_Usuario
 
-	if @precioVideo < @usuarioCredito
-
+	if 0 > (@usuarioCredito - @costoVideo)
+	           
 		Begin
 
-			set @respuestaCompra = 1
+			set @respuestaCompra = 0
 
 			return @respuestaCompra
 
 		End
+
+		set @respuestaCompra = 1
+
+		return @respuestaCompra
 
 End Try
 
@@ -3886,7 +4531,26 @@ Begin Catch
 End Catch
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioActivacionCorreo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[sinOferta]    Script Date: 23/05/2016 14:59:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[sinOferta](@empresa int,@precioEjercicio decimal(18,2) output) as
+
+begin try
+
+	select @precioEjercicio = precioEjercicio from Tabla_DuracionProductos where id_Empresa = @empresa 
+
+end try
+
+begin catch
+
+	return -6
+
+end catch 
+GO
+/****** Object:  StoredProcedure [dbo].[usuarioActivacionCorreo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3923,7 +4587,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioActivacionTelefono]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioActivacionTelefono]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3960,7 +4624,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioContrasenaCelular]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioContrasenaCelular]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -3996,7 +4660,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioContrasenaCorreo]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioContrasenaCorreo]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -4032,7 +4696,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioExiste]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioExiste]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -4067,7 +4731,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioLogueado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioLogueado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -4101,7 +4765,7 @@ End Catch
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[usuarioRegistrado]    Script Date: 17/05/2016 1:45:52 ******/
+/****** Object:  StoredProcedure [dbo].[usuarioRegistrado]    Script Date: 23/05/2016 14:59:47 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -4922,6 +5586,288 @@ End
 ' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoDeEjercicios'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=1 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoDeEjercicios'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+Begin DesignProperties = 
+   Begin PaneConfigurations = 
+      Begin PaneConfiguration = 0
+         NumPanes = 4
+         Configuration = "(H (1[59] 4[2] 2[21] 3) )"
+      End
+      Begin PaneConfiguration = 1
+         NumPanes = 3
+         Configuration = "(H (1 [50] 4 [25] 3))"
+      End
+      Begin PaneConfiguration = 2
+         NumPanes = 3
+         Configuration = "(H (1 [50] 2 [25] 3))"
+      End
+      Begin PaneConfiguration = 3
+         NumPanes = 3
+         Configuration = "(H (4 [30] 2 [40] 3))"
+      End
+      Begin PaneConfiguration = 4
+         NumPanes = 2
+         Configuration = "(H (1 [56] 3))"
+      End
+      Begin PaneConfiguration = 5
+         NumPanes = 2
+         Configuration = "(H (2 [66] 3))"
+      End
+      Begin PaneConfiguration = 6
+         NumPanes = 2
+         Configuration = "(H (4 [50] 3))"
+      End
+      Begin PaneConfiguration = 7
+         NumPanes = 1
+         Configuration = "(V (3))"
+      End
+      Begin PaneConfiguration = 8
+         NumPanes = 3
+         Configuration = "(H (1[56] 4[18] 2) )"
+      End
+      Begin PaneConfiguration = 9
+         NumPanes = 2
+         Configuration = "(H (1 [75] 4))"
+      End
+      Begin PaneConfiguration = 10
+         NumPanes = 2
+         Configuration = "(H (1[66] 2) )"
+      End
+      Begin PaneConfiguration = 11
+         NumPanes = 2
+         Configuration = "(H (4 [60] 2))"
+      End
+      Begin PaneConfiguration = 12
+         NumPanes = 1
+         Configuration = "(H (1) )"
+      End
+      Begin PaneConfiguration = 13
+         NumPanes = 1
+         Configuration = "(V (4))"
+      End
+      Begin PaneConfiguration = 14
+         NumPanes = 1
+         Configuration = "(V (2))"
+      End
+      ActivePaneConfig = 0
+   End
+   Begin DiagramPane = 
+      Begin Origin = 
+         Top = 0
+         Left = 0
+      End
+      Begin Tables = 
+         Begin Table = "Tabla_MisEjercicios"
+            Begin Extent = 
+               Top = 38
+               Left = 0
+               Bottom = 231
+               Right = 261
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Usuario"
+            Begin Extent = 
+               Top = 132
+               Left = 323
+               Bottom = 276
+               Right = 532
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Empresa"
+            Begin Extent = 
+               Top = 6
+               Left = 584
+               Bottom = 102
+               Right = 793
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Ejercicios"
+            Begin Extent = 
+               Top = 0
+               Left = 312
+               Bottom = 130
+               Right = 521
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+      End
+   End
+   Begin SQLPane = 
+   End
+   Begin DataPane = 
+      Begin ParameterDefaults = ""
+      End
+   End
+   Begin CriteriaPane = 
+      Begin ColumnWidths = 11
+         Column = 1440
+         Alias = 900
+         Table = 1170
+         Output = 720
+         Append = 1400
+         NewValue = 1170
+         SortType = 1350
+         SortOrder = 1410
+         GroupBy = 1350
+         Filter = 1350
+         Or = 1350
+         Or = 1350
+         Or = 1350
+      End
+   End
+End
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoMisEjercicios'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=1 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoMisEjercicios'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+Begin DesignProperties = 
+   Begin PaneConfigurations = 
+      Begin PaneConfiguration = 0
+         NumPanes = 4
+         Configuration = "(H (1[52] 4[9] 2[21] 3) )"
+      End
+      Begin PaneConfiguration = 1
+         NumPanes = 3
+         Configuration = "(H (1 [50] 4 [25] 3))"
+      End
+      Begin PaneConfiguration = 2
+         NumPanes = 3
+         Configuration = "(H (1 [50] 2 [25] 3))"
+      End
+      Begin PaneConfiguration = 3
+         NumPanes = 3
+         Configuration = "(H (4 [30] 2 [40] 3))"
+      End
+      Begin PaneConfiguration = 4
+         NumPanes = 2
+         Configuration = "(H (1 [56] 3))"
+      End
+      Begin PaneConfiguration = 5
+         NumPanes = 2
+         Configuration = "(H (2 [66] 3))"
+      End
+      Begin PaneConfiguration = 6
+         NumPanes = 2
+         Configuration = "(H (4 [50] 3))"
+      End
+      Begin PaneConfiguration = 7
+         NumPanes = 1
+         Configuration = "(V (3))"
+      End
+      Begin PaneConfiguration = 8
+         NumPanes = 3
+         Configuration = "(H (1[56] 4[18] 2) )"
+      End
+      Begin PaneConfiguration = 9
+         NumPanes = 2
+         Configuration = "(H (1 [75] 4))"
+      End
+      Begin PaneConfiguration = 10
+         NumPanes = 2
+         Configuration = "(H (1[66] 2) )"
+      End
+      Begin PaneConfiguration = 11
+         NumPanes = 2
+         Configuration = "(H (4 [60] 2))"
+      End
+      Begin PaneConfiguration = 12
+         NumPanes = 1
+         Configuration = "(H (1) )"
+      End
+      Begin PaneConfiguration = 13
+         NumPanes = 1
+         Configuration = "(V (4))"
+      End
+      Begin PaneConfiguration = 14
+         NumPanes = 1
+         Configuration = "(V (2))"
+      End
+      ActivePaneConfig = 0
+   End
+   Begin DiagramPane = 
+      Begin Origin = 
+         Top = 0
+         Left = 0
+      End
+      Begin Tables = 
+         Begin Table = "Tabla_MisExplicaciones"
+            Begin Extent = 
+               Top = 6
+               Left = 38
+               Bottom = 178
+               Right = 247
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Ejercicios"
+            Begin Extent = 
+               Top = 6
+               Left = 285
+               Bottom = 159
+               Right = 494
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Empresa"
+            Begin Extent = 
+               Top = 6
+               Left = 532
+               Bottom = 102
+               Right = 741
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "Tabla_Usuario"
+            Begin Extent = 
+               Top = 180
+               Left = 286
+               Bottom = 331
+               Right = 495
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+      End
+   End
+   Begin SQLPane = 
+   End
+   Begin DataPane = 
+      Begin ParameterDefaults = ""
+      End
+   End
+   Begin CriteriaPane = 
+      Begin ColumnWidths = 11
+         Column = 1440
+         Alias = 900
+         Table = 1170
+         Output = 720
+         Append = 1400
+         NewValue = 1170
+         SortType = 1350
+         SortOrder = 1410
+         GroupBy = 1350
+         Filter = 1350
+         Or = 1350
+         Or = 1350
+         Or = 1350
+      End
+   End
+End
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoMisExplicaciones'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=1 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'Vista_MostrarListadoMisExplicaciones'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
 Begin DesignProperties = 
